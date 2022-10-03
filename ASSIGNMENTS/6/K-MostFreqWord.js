@@ -16,7 +16,7 @@ function kFreq(words, k) {
     // this converion has been done for the ease of comparision
     const mapEntries = [...wordsMap.entries()];
 
-    // storing entire array in minHeap : word with lowest freq will appeared at the top
+    // storing mapEntries array in minHeap : word with lowest freq will appeared at the top
     const minHeap = PriorityQueue.fromArray(mapEntries, (a, b) => a[1] - b[1]);
 
     // pop all words from the heap until the size of minheap is greater than k
@@ -24,8 +24,8 @@ function kFreq(words, k) {
         minHeap.pop();
     }
 
-    // clear the last k elements in minHeap which will have the max frequency and store it ini res arr
     const res = [];
+    // clear the last k elements in minHeap which will have the max frequency and store it ini res arr
     while (!minHeap.isEmpty()) {
         res.push(minHeap.pop()[0]);
     }
