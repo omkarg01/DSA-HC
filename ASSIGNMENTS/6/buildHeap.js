@@ -1,6 +1,7 @@
 // const arr = [1, 3, 7, 9, 12, 10, 8, 16, 18, 22, 27];
 const arr = [75, 25, 35, 45, 90, 80, 60, 20, 30]
 
+
 class MinHeap {
     constructor() {
         this.heap = [];
@@ -48,4 +49,4 @@ const obj = new MinHeap();
 obj.buildHeap(arr)
 console.log(obj.heap)
 
-
+// Time Complexity : O(n)

@@ -29,3 +29,5 @@ function kClosestPoints(points, k) {
 const points = [[1, 3], [-2, 2]];
 const k = 1;
 kClosestPoints(points, k)
+
+// Time Complexity : O(n)
