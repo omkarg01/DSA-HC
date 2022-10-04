@@ -46,3 +46,7 @@ const products = ['yellowShirt', 'redHat', 'cap', 'cap', 'blackShirt', 'bluePant
     'greenPants', 'greenPants', 'greenPants'];
 
 mostFreqProducts(products)
+
+
+// Time Complexity : O(nLogn)
+// array sort is the highest time consuming in the code

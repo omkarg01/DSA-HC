@@ -34,3 +34,9 @@ function collinear(points) {
 // const points = [[1, 1], [1, 6], [0, 9]];
 const points = [[1, 1], [1, 4], [1, 5]];
 collinear(points)
+
+// Time Complexity : O(n) 
+// iterating through each element of array for calculating slope between 2 points
+
+// Space Complexity : O(1)
+

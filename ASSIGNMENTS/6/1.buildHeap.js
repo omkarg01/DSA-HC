@@ -49,4 +49,4 @@ const obj = new MinHeap();
 obj.buildHeap(arr)
 console.log(obj.heap)
 
-// Time Complexity : O(n)
+// Time Complexity : O(n) Building heap is highest time cosuming in the code

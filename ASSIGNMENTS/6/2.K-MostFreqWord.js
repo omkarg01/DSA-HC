@@ -35,3 +35,7 @@ function kFreq(words, k) {
 const words = ["priya", "bhatia", "akshay", "arpit", "priya", "arpit"];
 const k = 3;
 kFreq(words, k);
+
+// Time Complexity : O(nLogn) 
+// heap sort is most time consuming in the code, 
+// heap contains k elements so it will be kLogn but for worst case consider O(nlogn)
