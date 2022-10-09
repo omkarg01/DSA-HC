@@ -41,14 +41,10 @@ function mergeProcedure(arr, p, mid, q) {
         j += 1;
         k += 1;
     }
-
-
-
 }
 
 const arr = [50, 70, 29, 67, 12, 15, 46];
 const p = 0;
 const q = arr.length - 1;
 mergeSort(arr, p, q);
-// mergeProcedure(arr, 0, 3, arr.length - 1)
 console.log(arr)
