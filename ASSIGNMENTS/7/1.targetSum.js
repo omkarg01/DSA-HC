@@ -28,8 +28,8 @@ function targetSum(arr, i, sum, target, minHeap, k) {
 }
 
 const minHeap = new PriorityQueue((a, b) => a[1] - b[1]);
-const arr = [-1, 2, 1, -4];
-const target = 1;
+const arr = [-1, 2, 3, -4];
+const target = 5;
 const k = 3; // no. of elements to be considered for sum
 
 targetSum(arr, 0, 0, target, minHeap, k);
