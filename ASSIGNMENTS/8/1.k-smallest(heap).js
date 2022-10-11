@@ -13,8 +13,6 @@ function ksmallest(arr, k) {
     return maxHeap.pop()
 }
 
-
-
 const arr = [40, 25, 68, 79, 52, 66, 89, 97];
 const k = 2;
 

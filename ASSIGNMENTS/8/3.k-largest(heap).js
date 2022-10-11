@@ -1,6 +1,6 @@
 import { MinPriorityQueue } from 'datastructures-js';
 
-function ksmallest(arr, k) {
+function klargest(arr, k) {
     const minHeap = new MinPriorityQueue();
 
     arr.forEach(element => {
@@ -13,9 +13,8 @@ function ksmallest(arr, k) {
     return minHeap.pop()
 }
 
-
 const arr = [40, 25, 68, 79, 52, 66, 89, 97];
 const k = 2;
 
-const result = ksmallest(arr, k);
+const result = klargest(arr, k);
 console.log(result)
