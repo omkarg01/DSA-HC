@@ -1,4 +1,4 @@
-function majority(nums) {
+function majority(arr) {
     const map = arr.reduce((acc, e) => acc.set(e, (acc.get(e) || 0) + 1), new Map());
 
     const sortMap = new Map([...map].sort().reverse());
