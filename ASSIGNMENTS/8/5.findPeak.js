@@ -31,3 +31,6 @@ const p = 0;
 const q = arr.length - 1;
 const peak = binarySearch(arr, p, q);
 console.log(peak)
+
+// Time Complexity : O(logn)
+// Space Compelxity : O(logn) (height of tree)
