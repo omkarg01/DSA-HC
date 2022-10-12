@@ -33,3 +33,5 @@ console.log(arr)
 sortColor(arr, p, q)
 console.log(arr)
 
+// Time Compexity : O(nlogn) -> Quick Sort
+// Space Complexity : O(1) -> Inplace Sorting
