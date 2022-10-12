@@ -32,3 +32,4 @@ const q = arr.length - 1;
 console.log(arr)
 sortColor(arr, p, q)
 console.log(arr)
+
