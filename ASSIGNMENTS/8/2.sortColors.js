@@ -19,13 +19,6 @@ function sort(arr, p, q) {
     return i;
 }
 
-function swap(arr, i, j) {
-    const temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-}
-
-
 const arr = [2, 0, 2, 1, 1, 0];
 const p = 0;
 const q = arr.length - 1;
@@ -35,3 +28,9 @@ console.log(arr)
 
 // Time Compexity : O(nlogn) -> Quick Sort
 // Space Complexity : O(1) -> Inplace Sorting
+
+function swap(arr, i, j) {
+    const temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
