@@ -18,3 +18,5 @@ const k = 2;
 
 const result = ksmallest(arr, k);
 console.log(result)
+
+// Time Complexity : O(nlogn)
