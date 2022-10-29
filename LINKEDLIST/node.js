@@ -39,6 +39,35 @@ class LinkedList {
         newNode.next = temp;
     }
 
+    delete(pos) {
+        let temp = this.head;
+
+        while (pos > 0) {
+            
+        }
+    }
+
+    mergeLL(head1, head2) {
+
+        let temp = null;
+        if (head1 === null) {
+            return head2;
+        }
+        if (head2 === null) {
+            return head1;
+        }
+
+        if (head1.data <= head2.data) {
+            temp = head1;
+            temp.next = this.mergeLL(head1.next, head2)
+        } else {
+            temp = head2;
+            temp.next = this.mergeLL(head1, head2.next)
+        }
+
+        return temp;
+    }
+
     display() {
         let temp = this.head;
 
@@ -55,8 +84,22 @@ class LinkedList {
     }
 }
 
-const ll = new LinkedList();
-ll.insertAtEnd(10)
-ll.insertAtEnd(20)
-ll.insertAtEnd(30)
-ll.display()
+const list1 = new LinkedList();
+list1.insertAtEnd(10)
+list1.insertAtEnd(20)
+list1.insertAtEnd(30)
+list1.insertAtEnd(40)
+list1.insertAtEnd(50)
+list1.display()
+
+const list2 = new LinkedList();
+list2.insertAtEnd(11)
+list2.insertAtEnd(22)
+list2.insertAtEnd(33)
+list2.insertAtEnd(44)
+list2.insertAtEnd(55)
+// list2.display()
+
+const list3 = new LinkedList()
+list3.head = list3.mergeLL(list1.head, list2.head)
+// list3.display()
