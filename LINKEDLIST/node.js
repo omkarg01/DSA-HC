@@ -41,10 +41,19 @@ class LinkedList {
 
     delete(pos) {
         let temp = this.head;
-
-        while (pos > 0) {
-            
+        if (pos === 1){
+            this.head = temp.next;
+            return;
         }
+
+        while (pos - 2 > 0) {
+            temp = temp.next;
+            pos -= 1;
+        }
+
+        let newNext = temp.next.next;
+        temp.next.next = null;
+        temp.next = newNext;
     }
 
     mergeLL(head1, head2) {
@@ -101,5 +110,8 @@ list2.insertAtEnd(55)
 // list2.display()
 
 const list3 = new LinkedList()
-list3.head = list3.mergeLL(list1.head, list2.head)
+// list3.head = list3.mergeLL(list1.head, list2.head)
 // list3.display()
+
+list1.delete(2)
+list1.display()
