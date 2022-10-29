@@ -27,7 +27,16 @@ class LinkedList {
     }
 
     insertAtStart(data) {
-        
+        let newNode = new Node(data);
+
+        if (this.head === null) {
+            this.head = newNode;
+            return;
+        }
+
+        let temp = this.head;
+        this.head = newNode;
+        newNode.next = temp;
     }
 
     display() {
@@ -47,7 +56,7 @@ class LinkedList {
 }
 
 const ll = new LinkedList();
-ll.insertAtStart(10)
-ll.insertAtStart(20)
-ll.insertAtStart(30)
+ll.insertAtEnd(10)
+ll.insertAtEnd(20)
+ll.insertAtEnd(30)
 ll.display()
